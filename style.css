@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Roboto:wght@400;700&family=Train+One&display=swap');
+
+:root {
+    /* https://icolorpalette.com/palette-by-themes/desert */
+    --dark-brown: #813e1a;
+    --dark-blue: #53505f;
+    --light-orange: #d58253;
+    --medium-orange: #c5734a;
+    --orange-brown: #b87656;
+    --light-blue: #c2d0e3;
+    --sand: #c7b09a;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: var(--sand);
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#logo {
+    flex-grow: 1;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-right: 4rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+main {
+    margin-top: 80px;
+    display: grid;
+    grid-template-rows: repeat(5, 400px);
+    flex-grow: 1;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section1 {
+    background-color: white;
+}
+
+#hero {
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+h1 {
+    margin-left: 4rem;
+    color: white;
+    font-size: 4rem;
+    font-family: 'Train One', cursive;
+    width: 60%;
+}
+
+#section2 {
+    background-color: var(--light-orange);
+    color: white;
+}
+
+#section3 {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+#section4 {
+    background-color: var(--light-blue);
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--dark-brown);
+    color: white;
+    padding: .5rem;
+}
