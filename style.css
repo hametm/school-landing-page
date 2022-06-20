@@ -21,6 +21,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+p, li {
+    line-height: 1.5; 
+}
+
+/* Header */
+
 nav {
     position: fixed;
     width: 100%;
@@ -60,6 +66,8 @@ nav li {
     list-style-type: none;
 }
 
+/* Main */
+
 main {
     /* margin-top: 80px; */
     display: grid;
@@ -70,8 +78,13 @@ main {
 h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 3.5rem;
-    margin: 0px auto;
+    margin: 0px auto 3rem auto;
     text-shadow: -2px 2px rgb(180, 180, 180);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 .section {
@@ -81,6 +94,8 @@ h2 {
     justify-content: center;
     padding: 5rem;
 }
+
+/* Hero */
 
 #hero {
     background-image: url(images/hero.jpg);
@@ -150,12 +165,14 @@ h1 {
     transform: translate(2px, 2px);
 }
 
+/* Who We Are */
+
 #whoWeAre {
     background-color: white;
 }
 
 .sectionText {
-    margin: 3rem auto;
+    margin: 0px auto 3rem auto;
     width: 75%;
     line-height: 1.5; 
 }
@@ -188,20 +205,56 @@ h1 {
     margin-bottom: 0px;
 }
 
+/* Programs */
+
 #programs {
     background-color: var(--light-orange);
     color: white;
 }
+
+#programContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    width: 75%;
+}
+
+.program {
+    display: grid;
+    grid-template-rows: 15% 30% auto;
+}
+
+.program p {
+    margin: .5rem auto 0px 0px;
+}
+
+.program ul {
+    width: 75%;
+    margin: 0;
+}
+
+.program li {
+    margin-bottom: .5rem;
+    list-style-type: "\25B8";
+    padding-left: .5rem;
+}
+
+/* Student Shelters */
 
 #studentShelters {
     background-color: var(--dark-blue);
     color: white;
 }
 
+/* Nondiscrimination */
+
 #nondiscrimination {
     background-color: var(--light-blue);
     color: white;
 }
+
+/* Footer */
 
 footer {
     display: flex;
